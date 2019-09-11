@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="catlist">
+        <item>Сидячий образ жизни</item>
+        <item>Умеренная активность</item>
+        <item>Средняя активность</item>
+        <item>Высокая активность</item>
+        <item>Спортсмен</item>
+    </string-array>
+</resources>

@@ -1,4 +1,4 @@
-package pilnik.belstu.by;
+package pilnik.belstu.by.pilnik;
 
 import android.os.Bundle;
 
@@ -8,9 +8,15 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.os.Debug;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+
+import pilnik.belstu.by.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        for (int count = 0; count <10 ; count++) {
+            Log.d("MainActivity","Counter"+count);
+        }
+        displayText();
+    }
+
+    private void displayText() {
+        TextFunction ntf = new TextFunction();
+        TextView nv = findViewById(R.id.Newtext);
+        nv.setText(ntf.getValue());
     }
 
     @Override
